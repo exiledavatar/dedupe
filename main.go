@@ -32,13 +32,13 @@ func main() {
 			}
 
 			items = strings.Split(input, iSeparator)
-			fmt.Println(len(items))
+			// fmt.Println(len(items))
 			if trimWhitespace {
 				for i, v := range items {
 					items[i] = strings.TrimSpace(v)
 				}
 			}
-			fmt.Println(len(items))
+			// fmt.Println(len(items))
 
 			switch {
 			case slices.Contains([]string{"item", "i"}, itype):
